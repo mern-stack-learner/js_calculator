@@ -5,13 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body class="bg-slate-950">
 <!-- Body of the Calculator -->
-<div id="container" class="bg-slate-600 place-self-center m-4 mt-10 w-5/6 h-14 max-w-3xl border-2 rounded-md hover:shadow-[0_0_20px_rgba(2,200,23,0.6)]">
+<div id="container" class="bg-slate-600 place-self-center m-4 mt-10 w-5/6 max-w-80 min-w-72 h-fit border-2 rounded-md hover:shadow-[0_0_20px_rgba(150,10,10,0.6)]">
+<!-- Display Portion of the calculator -->
+    <div id="display-portion" class="m-1">
+        <h1 class="text-center text-2xl font-extrabold text-zinc-400">Basic Calculator</h1>
 <!-- Display Panel -->
-    <div id="display-panel" class="m-1">
-    <h1 class="text-center text-2xl font-extrabold text-zinc-400">Basic Calculator</h1>
+        <div id="display-panel" class="bg-slate-950 m-1 p-1 px-2 text-right text-lime-400 min-h-8">
+            <p id="secondary-display" class="opacity-50">Hello</p>
+            <p id="primary-display" class="text-2xl">World</p>
+        </div>
+    </div>
+<!-- Keypad portion -->
+    <div id="keypad-container" class="my-2 mx-1 p-2 grid grid-cols-5 gap-1">
+        <!-- row: 1 -->
+        <button id="btn-AC" class="clear-buttons all-buttons">AC</button>
+        <button id="btn-clr" class="clear-buttons all-buttons">clr</button>
+        <button id="btn-open-bracket" class="all-buttons operator-buttons">(</button>
+        <button id="btn-close-bracket" class="all-buttons operator-buttons">)</button>
+        <button id="btn-on-off" class="p-1 w-14 border text-center text-yellow-600 hover:shadow-[0_0_20px_rgba(150,150,10,0.6)]">on/off</button>
+        <!-- row: 2 -->
+        <button id="btn-7" class="all-buttons number-buttons">7</button>
+        <button id="btn-8" class="all-buttons number-buttons">8</button>
+        <button id="btn-9" class="all-buttons number-buttons">9</button>
+        <button id="btn-Sqrt" class="all-buttons operator-buttons">Sqrt</button>
+        <button id="btn-1/x" class="all-buttons operator-buttons">1/x</button>
+        <!-- row: 3 -->
+        <button id="btn-4" class="all-buttons number-buttons">4</button>
+        <button id="btn-5" class="all-buttons number-buttons">5</button>
+        <button id="btn-6" class="all-buttons number-buttons">6</button>
+        <button id="btn-divide" class="all-buttons operator-buttons">/</button>
+        <button id="btn-subtract" class="all-buttons operator-buttons">-</button>
+        <!-- row: 4 -->
+        <button id="btn-1" class="all-buttons number-buttons">1</button>
+        <button id="btn-2" class="all-buttons number-buttons">2</button>
+        <button id="btn-3" class="all-buttons number-buttons">3</button>
+        <button id="btn-multiply" class="all-buttons operator-buttons">x</button>
+        <button id="btn-add" class="all-buttons operator-buttons">+</button>
+        <!-- row: 5 -->
+        <button id="btn-sign-toggle" class="all-buttons number-buttons">+/-</button>
+        <button id="btn-0" class="all-buttons number-buttons">0</button>
+        <button id="btn-decimal-point" class="all-buttons number-buttons">.</button>
+        <button id="btn-percentage" class="all-buttons operator-buttons">%</button>
+        <button id="btn-result" class="all-buttons text-lime-500 hover:shadow-[0_0_10px_rgba(150,150,10,0.5)]">=</button>
+
     </div>
 </div>
 <script src="./script.js"></script>

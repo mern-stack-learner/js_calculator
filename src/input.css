@@ -1,2 +1,31 @@
 	/* This file is often left empty in Tailwind CSS v4+ CLI setups. */
 @import "tailwindcss"; /*important to link styling in versions beyond 4.xx*/
+
+/* Tailwind Classes */
+.all-buttons {
+    @apply p-2 w-14 border;
+}
+.number-buttons {
+    @apply border-slate-400 text-slate-400 hover:shadow-[0_0_5px_rgba(150,150,10,0.5)];
+}
+.number-buttons:active {
+	@apply text-lime-400 border-b-emerald-300 shadow-emerald-300
+}
+
+.operator-buttons {
+	@apply text-cyan-500 border-cyan-600 hover:shadow-[0_0_5px_rgba(150,150,50,0.8)];
+}
+.operator-buttons:active {
+	@apply text-lime-400 shadow-cyan-400 bg-cyan-950;
+}
+
+.clear-buttons {
+	@apply text-center text-yellow-700 hover:text-red-500;
+}
+.clear-buttons:active {
+	@apply bg-amber-900 text-amber-200;
+}
+
+#btn-result:active {
+	@apply bg-emerald-400 text-emerald-950;
+}

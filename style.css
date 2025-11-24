@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Tailwind Classes */
+.all-buttons {
+    @apply p-2 w-14 border;
+}
+.number-buttons {
+    @apply border-slate-400 text-slate-400 hover:shadow-[0_0_5px_rgba(150,150,10,0.5)];
+}
