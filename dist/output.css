@@ -328,6 +328,7 @@
 }
 .all-buttons {
   width: calc(var(--spacing) * 14);
+  border-radius: var(--radius-md);
   border-style: var(--tw-border-style);
   border-width: 1px;
   padding: calc(var(--spacing) * 2);
@@ -345,7 +346,7 @@
 .number-buttons:active {
   border-color: var(--color-emerald-300);
   color: var(--color-lime-400);
-  --tw-shadow: 0 0 10px var(--tw-shadow-color, rgba(100,150,50,0.8));
+  --tw-shadow: 0 0 50px var(--tw-shadow-color, rgba(100,150,50,0.8));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
 .operator-buttons {

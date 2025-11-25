@@ -3,13 +3,13 @@
 
 /* Tailwind Classes */
 .all-buttons {
-    @apply p-2 w-14 border;
+    @apply p-2 w-14 border rounded-md;
 }
 .number-buttons {
     @apply border-slate-400 text-slate-400 hover:shadow-[0_0_5px_rgba(150,150,10,0.5)];
 }
 .number-buttons:active {
-	@apply text-lime-400 border-emerald-300 shadow-[0_0_10px_rgba(100,150,50,0.8)]
+	@apply text-lime-400 border-emerald-300 shadow-[0_0_50px_rgba(100,150,50,0.8)]
 }
 
 .operator-buttons {
