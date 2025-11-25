@@ -14,6 +14,8 @@
     --color-yellow-700: oklch(55.4% 0.135 66.442);
     --color-lime-400: oklch(84.1% 0.238 128.85);
     --color-lime-500: oklch(76.8% 0.233 130.85);
+    --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-green-800: oklch(44.8% 0.119 151.328);
     --color-emerald-300: oklch(84.5% 0.143 164.978);
     --color-emerald-400: oklch(76.5% 0.177 163.223);
     --color-emerald-950: oklch(26.2% 0.051 172.552);
@@ -21,10 +23,12 @@
     --color-cyan-500: oklch(71.5% 0.143 215.221);
     --color-cyan-600: oklch(60.9% 0.126 221.723);
     --color-cyan-950: oklch(30.2% 0.056 229.695);
+    --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-slate-400: oklch(70.4% 0.04 256.788);
     --color-slate-600: oklch(44.6% 0.043 257.281);
     --color-slate-950: oklch(12.9% 0.042 264.695);
     --color-zinc-400: oklch(70.5% 0.015 286.067);
+    --color-black: #000;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
@@ -257,6 +261,12 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .bg-green-500 {
+    background-color: var(--color-green-500);
+  }
+  .bg-green-800 {
+    background-color: var(--color-green-800);
+  }
   .bg-slate-600 {
     background-color: var(--color-slate-600);
   }
@@ -291,6 +301,9 @@
   }
   .text-lime-500 {
     color: var(--color-lime-500);
+  }
+  .text-slate-300 {
+    color: var(--color-slate-300);
   }
   .text-yellow-600 {
     color: var(--color-yellow-600);
@@ -383,6 +396,9 @@
 #btn-result:active {
   background-color: var(--color-emerald-400);
   color: var(--color-emerald-950);
+}
+.text-none {
+  color: var(--color-black);
 }
 @property --tw-border-style {
   syntax: "*";
